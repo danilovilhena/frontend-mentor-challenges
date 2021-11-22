@@ -6,8 +6,10 @@ const Header = (props) => {
         <header>
             <div className="user-details">
                 <img src={profileImage} alt="Jeremy Robson" />
-                <p>Report for</p>
-                <h1>Jeremy Robson</h1>
+                <div className="text-details">
+                    <p>Report for</p>
+                    <h1>Jeremy Robson</h1>
+                </div>
             </div>
 
             <div className="buttons">

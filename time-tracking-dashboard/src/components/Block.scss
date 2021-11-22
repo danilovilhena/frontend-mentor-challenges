@@ -56,3 +56,20 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .hours-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: .75rem;
+
+        .hours{
+            font-size: 1.75em !important;
+            margin: .5rem 0 !important;
+        }
+        .last-hours {
+            margin: 0 !important;
+        }
+    }
+}

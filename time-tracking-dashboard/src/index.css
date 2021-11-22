@@ -38,3 +38,13 @@ button {
 	cursor: pointer;
 	outline: inherit;
 }
+
+@media (max-width: 768px) {
+    body {
+        height: 100%;
+    }
+
+	#root {
+		width: 100%;
+	}
+}

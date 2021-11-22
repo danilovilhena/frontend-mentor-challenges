@@ -14,8 +14,10 @@ const Block = (props) => {
                         <img src={ellipsis} aria-hidden alt=""></img>
                     </button>
                 </div>
-                <p className="hours">{props.obj.time}</p>
-                <p className="last-hours">{props.obj.last}</p>
+                <div className="hours-container">
+                    <p className="hours">{props.obj.time}</p>
+                    <p className="last-hours">{props.obj.last}</p>
+                </div>
             </div>
         </section>
     )
