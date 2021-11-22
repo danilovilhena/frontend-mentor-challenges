@@ -1,3 +1,4 @@
+import Header from './components/Header'
 import Block from './components/Block'
 import './App.scss';
 
@@ -56,7 +57,7 @@ const App = () => {
 
   return (
     <section className="grid">
-      <header>a</header>
+      <Header />
       {blocks.map((el, idx) => <Block obj={el} key={idx}/>)}
     </section>
   );
