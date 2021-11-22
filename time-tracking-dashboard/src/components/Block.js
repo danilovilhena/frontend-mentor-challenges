@@ -5,13 +5,13 @@ const Block = (props) => {
     return (
         <section className="block">
             <div className="highlight" aria-hidden style={{backgroundColor: props.obj.color}}>
-                <img src={props.obj.icon}></img>
+                <img src={props.obj.icon} alt=""></img>
             </div>
             <div className="content">
                 <div className="title">
                     <h2>{props.obj.title}</h2>
                     <button className="details" title="View more details">
-                        <img src={ellipsis} aria-hidden></img>
+                        <img src={ellipsis} aria-hidden alt=""></img>
                     </button>
                 </div>
                 <p className="hours">{props.obj.time}</p>
