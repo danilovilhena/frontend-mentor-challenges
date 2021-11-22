@@ -1,3 +1,28 @@
+:root {
+	--pale-blue: hsl(236, 100%, 87%);
+	--desatured-blue: hsl(235, 45%, 61%);
+	--verydark-blue: hsl(226, 43%, 10%);
+	--dark-blue: hsl(235, 46%, 20%);
+	--light-blue: hsl(195, 74%, 62%);
+    --blue: hsl(246, 80%, 60%);
+	--orange: hsl(15, 100%, 70%);
+	--yellow: hsl(43, 84%, 65%);
+	--red: hsl(348, 100%, 68%);
+	--green: hsl(145, 58%, 55%);
+	--violet: hsl(264, 64%, 52%);
+}
+
+* {
+    font-family: 'Rubik', sans-serif;
+    color: var(--white);
+    transition: all 0.25s ease-in-out;
+}
+
 body {
-  margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+	font-size: 1.125rem;
 }
