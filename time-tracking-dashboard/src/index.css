@@ -14,15 +14,17 @@
 
 * {
     font-family: 'Rubik', sans-serif;
-    color: var(--white);
-    transition: all 0.25s ease-in-out;
+    color: #fff;
+    transition: all 0.375s ease-in-out;
+	box-sizing: border-box;
 }
 
 body {
+	font-size: 1.125rem;
+	background-color: var(--verydark-blue);
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0;
-	font-size: 1.125rem;
 }
