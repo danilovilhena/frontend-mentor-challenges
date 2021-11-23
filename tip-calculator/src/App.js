@@ -6,7 +6,8 @@ import personIcon from './images/icon-person.svg';
 const App = () => {
   return (
     <main>
-      <img src={logo} alt="Splitter" />
+      <img src={logo} title="Splitter" />
+
       <div className="content">
         <div id="left-side">
           {/* Bill */}
@@ -31,30 +32,30 @@ const App = () => {
           <label for="people-input">Number of People</label>
           <div className="input-container">
             <img src={personIcon} alt="Person icon"/>
-            <input type="text" id="people-input"></input>
+            <input type="number" id="people-input" min="0"></input>
           </div>
         </div>
 
         <div id="right-side">
           {/* Tip Amount */}
-          <div id="tip-amount">
+          <div class="amount-container" id="tip-amount">
             <div>
               <h2>Tip Amount</h2>
-              <p>/ person</p>
+              <p>/person</p>
             </div>
             <p className="value">$4.27</p>
           </div>
 
           {/* Total Amount */}
-          <div id="total-amount">
+          <div class="amount-container" id="total-amount">
             <div>
               <h2>Total</h2>
-              <p>/ person</p>
+              <p>/person</p>
             </div>
             <p className="value">$32.79</p>
           </div>
 
-          <button className="btn inactive">Reset</button>
+          <button className="btn active">Reset</button>
         </div>
       </div>
     </main>
