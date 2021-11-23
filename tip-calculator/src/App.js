@@ -46,7 +46,7 @@ const App = () => {
 
           {/* Number of People */}
           <label htmlFor="people-input">Number of People</label>
-          <input type="number" id="people-input" min="1" value={person} onChange={handlePersonChange}></input>
+          <input type="text" id="people-input" placeholder="1" value={person} onChange={handlePersonChange}></input>
         </div>
 
         <div id="right-side">
