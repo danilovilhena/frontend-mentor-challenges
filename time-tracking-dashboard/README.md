@@ -12,15 +12,13 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
+![screenshot](https://user-images.githubusercontent.com/54288190/142954162-a1c4908c-6208-4d48-bba3-1e6a780b3aa2.png)
 
 ### How to run?
   1. Clone or download the project
   2. Run `npm install`
   3. Run `npm start`
   4. Open http://localhost:3000 in your browser
-
 
 ### Built with
 
@@ -29,12 +27,6 @@ Users should be able to:
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
 - [SASS](https://sass-lang.com) - For styles
-
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
 
 ### Author
 
