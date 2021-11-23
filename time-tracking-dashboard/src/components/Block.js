@@ -2,7 +2,7 @@ import './Block.scss';
 import ellipsis from '../images/icon-ellipsis.svg'
 
 const Block = (props) => {
-    let lastSentence = (props.timeframe == 'daily') ? 'Yesterday' : (props.timeframe == 'weekly') ? 'Last Week' : 'Last Month'
+    let lastSentence = (props.timeframe === 'daily') ? 'Yesterday' : (props.timeframe === 'weekly') ? 'Last Week' : 'Last Month'
 
     return (
         <section className="block">

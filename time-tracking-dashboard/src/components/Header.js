@@ -2,6 +2,10 @@ import './Header.scss';
 import profileImage from '../images/image-jeremy.png'
 
 const Header = (props) => {
+    const clickHandler = (event) => {
+        props.setTimeframe(event.target.innerText.toLowerCase())
+    }
+    
     return (
         <header>
             <div className="user-details">
@@ -13,9 +17,9 @@ const Header = (props) => {
             </div>
 
             <div className="buttons">
-                <button>Daily</button>
-                <button className="active">Weekly</button>
-                <button>Monthly</button>
+                <button onClick={clickHandler} className={props.timeframe === 'daily' ? 'active' : ''}>Daily</button>
+                <button onClick={clickHandler} className={props.timeframe === 'weekly' ? 'active' : ''}>Weekly</button>
+                <button onClick={clickHandler} className={props.timeframe === 'monthly' ? 'active' : ''}>Monthly</button>
             </div>
         </header>
     )
