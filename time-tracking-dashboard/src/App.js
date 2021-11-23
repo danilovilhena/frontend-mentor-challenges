@@ -29,10 +29,10 @@ const App = () => {
   })
 
   return (
-    <section className="grid">
+    <main className="grid">
       <Header timeframe={timeframe} setTimeframe={setTimeframe}/>
       {blocks.map((el, idx) => <Block timeframe={timeframe} obj={el} key={idx}/>)}
-    </section>
+    </main>
   );
 }
 
