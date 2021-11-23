@@ -20,12 +20,12 @@
         background-color: var(--dark-blue);
         width: 100%;
         margin-top: -1.25rem;
-        padding: .5rem 1.5rem;
+        padding: .5rem 1rem .5rem 1.5rem;
         border-radius: 1rem;
 
         &:hover {
             background-color: var(--desatured-blue);
-            cursor: pointer;
+            cursor: pointer;   
         }
 
         .title {
@@ -38,6 +38,14 @@
                 margin: 1rem 0 .5rem 0;
                 font-size: 1em;
                 font-weight: 500;
+            }
+
+            .details {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 2rem;
+                height: 2rem;
             }
         }
 

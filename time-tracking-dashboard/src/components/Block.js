@@ -2,6 +2,8 @@ import './Block.scss';
 import ellipsis from '../images/icon-ellipsis.svg'
 
 const Block = (props) => {
+    let lastSentence = (props.timeframe == 'daily') ? 'Yesterday' : (props.timeframe == 'weekly') ? 'Last Week' : 'Last Month'
+
     return (
         <section className="block">
             <div className="highlight" aria-hidden style={{backgroundColor: props.obj.color}}>
@@ -15,8 +17,8 @@ const Block = (props) => {
                     </button>
                 </div>
                 <div className="hours-container">
-                    <p className="hours">{props.obj.time}</p>
-                    <p className="last-hours">{props.obj.last}</p>
+                    <p className="hours">{props.obj.timeframes[props.timeframe].current}hrs</p>
+                    <p className="last-hours">{lastSentence} - {props.obj.timeframes[props.timeframe].previous}hrs</p>
                 </div>
             </div>
         </section>

@@ -1,5 +1,7 @@
+import {useState} from 'react'
 import Header from './components/Header'
 import Block from './components/Block'
+import data from './data.json'
 import './App.scss';
 
 import iconWork from './images/icon-work.svg'
@@ -55,10 +57,17 @@ const App = () => {
     }
   ]
 
+  const [timeframe, setTimeframe] = useState('weekly')
+
+  blocks.map(block => {
+    block.timeframes = data.find((el) => el.title === block.title).timeframes
+    return block
+  })
+
   return (
     <section className="grid">
       <Header />
-      {blocks.map((el, idx) => <Block obj={el} key={idx}/>)}
+      {blocks.map((el, idx) => <Block timeframe={timeframe} obj={el} key={idx}/>)}
     </section>
   );
 }
