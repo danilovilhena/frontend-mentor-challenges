@@ -12,10 +12,7 @@ const App = () => {
         <div id="left-side">
           {/* Bill */}
           <label for="bill-input">Bill</label>
-          <div className="input-container">
-            <img src={dollarIcon} alt="Bill icon"/>
-            <input type="text" id="bill-input"></input>
-          </div>
+          <input type="text" id="bill-input"></input>
 
           {/* Select Tip % */}
           <label for="custom-tip-input">Select Tip %</label>
@@ -25,15 +22,12 @@ const App = () => {
             <button className="btn active">15%</button>
             <button className="btn">25%</button>
             <button className="btn">50%</button>
-            <input type="text" id="custom-tip-input" placeholder="Custom"></input>
+            <input type="number" id="custom-tip-input" min="0" max="100" placeholder="Custom"></input>
           </div>
 
           {/* Number of People */}
           <label for="people-input">Number of People</label>
-          <div className="input-container">
-            <img src={personIcon} alt="Person icon"/>
-            <input type="number" id="people-input" min="0"></input>
-          </div>
+          <input type="number" id="people-input" min="1"></input>
         </div>
 
         <div id="right-side">

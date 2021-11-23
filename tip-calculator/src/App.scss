@@ -31,19 +31,45 @@
     }
 }
 
+input {
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    border: none;
+    outline: 2.5px solid transparent;
+    transition: outline 0.375s linear;
+    padding: .5rem;
+    border-radius: .375rem;
+    background-color: var(--light-gray-cyan);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+    &:active, &:hover {
+        outline: 2.5px solid var(--strong-cyan);
+    }
+
+    &:not(:placeholder-shown) {
+        text-align: right;
+    }
+
+    &:invalid {
+        outline: 2.5px solid #FF5E5B;
+    }
+}
+
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 70rem;
+    max-width: 60rem;
     margin: auto;
 
-    > img {
+    >img {
         margin: 4rem 0;
     }
 
     .content {
-        width: 90%;
+        width: 95%;
         display: flex;
         justify-content: space-between;
         background-color: var(--white);
@@ -51,11 +77,44 @@ main {
         border-radius: 1rem;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
-        #left-side, #right-side {
+        #left-side,
+        #right-side {
             width: 48%;
         }
 
-        #right-side{
+        #left-side {
+            display: flex;
+            flex-direction: column;
+
+            label {
+                font-size: 1.125rem;
+                font-weight: 700;
+                color: var(--verydark-gray-cyan);
+                margin-bottom: .5rem;
+            }
+
+            > div, > input {
+                margin-bottom: 2rem;
+            }
+
+            .buttons {
+                display: grid;
+                grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+                grid-gap: 1rem;
+            }
+
+            #bill-input {
+                background: url('./images/icon-dollar.svg') no-repeat scroll 1.25rem 1rem;
+                background-color: var(--light-gray-cyan);
+            }
+
+            #people-input {
+                background: url('./images/icon-person.svg') no-repeat scroll 1.25rem 1rem;
+                background-color: var(--light-gray-cyan);
+            }
+        }
+
+        #right-side {
             display: flex;
             flex-direction: column;
             background-color: var(--verydark-gray-cyan);
@@ -69,7 +128,7 @@ main {
                 align-items: center;
                 padding: 1rem 0;
 
-                > div {
+                >div {
                     h2 {
                         font-size: 1.125rem;
                         margin: 0;
@@ -93,7 +152,7 @@ main {
             .btn {
                 margin-top: auto;
             }
-            
+
         }
     }
 }
