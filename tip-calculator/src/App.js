@@ -1,13 +1,14 @@
 import { useState } from 'react';
 import logo from './images/logo.svg';
 import './App.scss';
+import './App.responsivity.scss';
 
 const App = () => {
-  const [value, setValue] = useState(0);
+  const [value, setValue] = useState('');
   const [person, setPerson] = useState(1);
   const [tip, setTip] = useState(15);
 
-  const handleValueChange = (event) => {+event.target.value >= 0 ? setValue(event.target.value) : setValue(1)}
+  const handleValueChange = (event) => {+event.target.value >= 0 ? setValue(event.target.value) : setValue('')}
   const handlePersonChange = (event) => {+event.target.value > 0 ? setPerson(event.target.value) : setPerson(1)}
   const handleTipChange = (event) => {
     if(event.target.tagName === 'BUTTON') {
@@ -20,20 +21,20 @@ const App = () => {
   
   const formatPrice = (num) => (Math.round(num * 100) / 100).toFixed(2);
   const calculateTip = () => value * (tip/100)
-  const resetStates = () => {setValue(0); setPerson(1); setTip(15)}
+  const resetStates = () => {setValue(''); setPerson(1); setTip(15)}
 
   return (
     <main>
-      <img src={logo} title="Splitter" />
+      <img src={logo} title="Splitter" alt="Splitter"/>
 
       <div className="content">
         <div id="left-side">
           {/* Bill */}
-          <label for="bill-input">Bill</label>
-          <input type="text" id="bill-input" value={value} onChange={handleValueChange}></input>
+          <label htmlFor="bill-input">Bill</label>
+          <input type="text" id="bill-input" value={value} placeholder="0" onChange={handleValueChange}></input>
 
           {/* Select Tip % */}
-          <label for="custom-tip-input">Select Tip %</label>
+          <label htmlFor="custom-tip-input">Select Tip %</label>
           <div className="buttons">
             <button className={tip === 5 ? "btn active": "btn"} onClick={handleTipChange}>5%</button>
             <button className={tip === 10 ? "btn active": "btn"} onClick={handleTipChange}>10%</button>
@@ -44,7 +45,7 @@ const App = () => {
           </div>
 
           {/* Number of People */}
-          <label for="people-input">Number of People</label>
+          <label htmlFor="people-input">Number of People</label>
           <input type="number" id="people-input" min="1" value={person} onChange={handlePersonChange}></input>
         </div>
 
@@ -67,7 +68,7 @@ const App = () => {
             <p className="value">${formatPrice((+value + calculateTip(value))/person)}</p>
           </div>
 
-          <button className="btn active" onClick={resetStates}>Reset</button>
+          <button className="btn active" onClick={resetStates} disabled={!value && person === 1}>Reset</button>
         </div>
       </div>
     </main>
