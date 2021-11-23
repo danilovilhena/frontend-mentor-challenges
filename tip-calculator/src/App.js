@@ -1,9 +1,27 @@
-import './App.scss';
+import { useState } from 'react';
 import logo from './images/logo.svg';
-import dollarIcon from './images/icon-dollar.svg';
-import personIcon from './images/icon-person.svg';
+import './App.scss';
 
 const App = () => {
+  const [value, setValue] = useState(0);
+  const [person, setPerson] = useState(1);
+  const [tip, setTip] = useState(15);
+
+  const handleValueChange = (event) => {+event.target.value >= 0 ? setValue(event.target.value) : setValue(1)}
+  const handlePersonChange = (event) => {+event.target.value > 0 ? setPerson(event.target.value) : setPerson(1)}
+  const handleTipChange = (event) => {
+    if(event.target.tagName === 'BUTTON') {
+      setTip(+event.target.innerText.split('%')[0])
+      document.querySelector('#custom-tip-input').value = ''
+    } else {
+      setTip(+event.target.value)
+    }
+  }
+  
+  const formatPrice = (num) => (Math.round(num * 100) / 100).toFixed(2);
+  const calculateTip = () => value * (tip/100)
+  const resetStates = () => {setValue(0); setPerson(1); setTip(15)}
+
   return (
     <main>
       <img src={logo} title="Splitter" />
@@ -12,44 +30,44 @@ const App = () => {
         <div id="left-side">
           {/* Bill */}
           <label for="bill-input">Bill</label>
-          <input type="text" id="bill-input"></input>
+          <input type="text" id="bill-input" value={value} onChange={handleValueChange}></input>
 
           {/* Select Tip % */}
           <label for="custom-tip-input">Select Tip %</label>
           <div className="buttons">
-            <button className="btn">5%</button>
-            <button className="btn">10%</button>
-            <button className="btn active">15%</button>
-            <button className="btn">25%</button>
-            <button className="btn">50%</button>
-            <input type="number" id="custom-tip-input" min="0" max="100" placeholder="Custom"></input>
+            <button className={tip === 5 ? "btn active": "btn"} onClick={handleTipChange}>5%</button>
+            <button className={tip === 10 ? "btn active": "btn"} onClick={handleTipChange}>10%</button>
+            <button className={tip === 15 ? "btn active": "btn"} onClick={handleTipChange}>15%</button>
+            <button className={tip === 25 ? "btn active": "btn"} onClick={handleTipChange}>25%</button>
+            <button className={tip === 50 ? "btn active": "btn"} onClick={handleTipChange}>50%</button>
+            <input type="number" id="custom-tip-input" min="0" max="100" placeholder="Custom" onChange={handleTipChange}></input>
           </div>
 
           {/* Number of People */}
           <label for="people-input">Number of People</label>
-          <input type="number" id="people-input" min="1"></input>
+          <input type="number" id="people-input" min="1" value={person} onChange={handlePersonChange}></input>
         </div>
 
         <div id="right-side">
           {/* Tip Amount */}
-          <div class="amount-container" id="tip-amount">
+          <div className="amount-container" id="tip-amount">
             <div>
               <h2>Tip Amount</h2>
               <p>/person</p>
             </div>
-            <p className="value">$4.27</p>
+            <p className="value">${formatPrice(calculateTip(value)/person)}</p>
           </div>
 
           {/* Total Amount */}
-          <div class="amount-container" id="total-amount">
+          <div className="amount-container" id="total-amount">
             <div>
               <h2>Total</h2>
               <p>/person</p>
             </div>
-            <p className="value">$32.79</p>
+            <p className="value">${formatPrice((+value + calculateTip(value))/person)}</p>
           </div>
 
-          <button className="btn active">Reset</button>
+          <button className="btn active" onClick={resetStates}>Reset</button>
         </div>
       </div>
     </main>
