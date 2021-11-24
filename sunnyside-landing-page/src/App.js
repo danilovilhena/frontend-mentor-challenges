@@ -1,11 +1,10 @@
-import './App.css';
+import "./App.scss";
+import Introduction from "./components/Introduction";
 
 const App = () => {
-  return (
-    <main>
-      
-    </main>
-  );
+  return (<>
+    <Introduction />
+  </>);
 }
 
 export default App;

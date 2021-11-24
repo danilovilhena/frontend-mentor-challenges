@@ -8,13 +8,20 @@
 	--very-dark-gray-blue: hsl(213, 9%, 39%);
 	--dark-gray-blue: hsl(232, 10%, 55%);
 	--gray-blue: hsl(210, 4%, 67%);
-	--white: hsl(0%, 0%, 100%)
+	--white: hsl(0, 0%, 100%);
+	--serif: 'Fraunces', serif;
+	--sans-serif: 'Barlow', sans-serif;
 }
 
 * {
-    font-family: 'Barlow', sans-serif;
-    transition: all 0.375s ease-in-out;
+	font-weight: 600;
+    font-family: var(--sans-serif);
+    transition: all 0.25s ease-in-out;
 	box-sizing: border-box;
+}
+
+html {
+	font-size: 18px;
 }
 
 body {

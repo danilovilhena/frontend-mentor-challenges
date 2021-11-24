@@ -1,0 +1,66 @@
+.introduction {
+    background-color: #3DBEFF;
+    padding: 2rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    > * {
+        max-width: 80rem;
+    }
+
+    header {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        img {
+            width: 8rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: var(--white);
+            margin-right: 2rem;
+        }
+
+        button {
+            font-size: .875rem;
+            font-family: var(--serif);
+            text-transform: uppercase;
+            color: #000;
+            background-color: var(--white);
+            border: none;
+            padding: .875rem 1.5rem;
+            border-radius: 4rem;
+            cursor: pointer;
+
+            &:hover {
+                color: var(--white);
+                background-color: #6DCFFF;
+            }
+        }
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        font-family: var(--serif);
+        font-weight: 900;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        color: var(--white);
+        margin: 4rem 0;
+    }
+
+    .arrow {
+        z-index: 1;
+    }
+
+    .background {
+        width: 100%;
+        margin-top: -4rem;
+        max-width: 70rem;
+    }
+}
