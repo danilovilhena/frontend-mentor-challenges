@@ -1,7 +1,7 @@
 import "./Introduction.scss"
 import logo from "../images/logo.svg"
 import arrowDown from "../images/icon-arrow-down.svg"
-import headerImage from "../images/desktop/image-header-2.png"
+import headerImage from "../images/desktop/image-header.png"
 
 const Introduction = () => (
     <div className="introduction">
