@@ -134,7 +134,7 @@
         }
     }
 
-    #mobile-menu[aria-expanded="true"] {
+    #mobile-menu[aria-hidden="false"] {
         opacity: 1;
         height: auto;
     }
