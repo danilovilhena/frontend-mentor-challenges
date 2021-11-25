@@ -1,0 +1,40 @@
+footer{
+    width: 100%;
+    background-color: #90D4C5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    padding: 3rem 0;
+
+    > svg {
+        margin-bottom: 2rem;
+        transform: scale(1.125);
+        
+        path {
+            fill: var(--dark-cyan);
+        }
+    }
+
+    nav {
+        margin-bottom: 4rem;
+    }
+
+    a {
+        text-decoration: none;
+        color: var(--medium-cyan);
+        cursor: pointer;
+        
+        &:not(:last-child) {
+            margin-right: 2rem;
+        }
+
+        &:hover {
+            color: var(--dark-cyan);
+
+            svg path {
+                fill: var(--dark-cyan);
+            }
+        }
+    }
+}

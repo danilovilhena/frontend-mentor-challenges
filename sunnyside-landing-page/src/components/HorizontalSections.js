@@ -2,7 +2,7 @@ import "./HorizontalSections.scss"
 import imageTransform from "../images/desktop/image-transform.jpg"
 import imageStandout from "../images/desktop/image-stand-out.jpg"
 
-const HorizontalSections = (props) => {
+const HorizontalSections = () => {
   const sections = [
     {
       title: "Transform your brand",
