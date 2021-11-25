@@ -1,0 +1,30 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 80rem;
+    margin: auto;
+    padding: 1rem 0 0 0;
+
+    > img {
+        width: 8rem;
+    }
+
+    a {
+        text-decoration: none;
+        color: var(--gray);
+        padding-bottom: 1.5rem;
+        border-bottom: 4px solid transparent;
+
+        &:not(:last-child) {
+            margin-right: 2rem;
+        }
+
+        &:hover {
+            color: var(--blue);
+            border-image-slice: 2;
+            border-image-source: linear-gradient(90deg, var(--green), var(--cyan));
+        }
+    }
+}

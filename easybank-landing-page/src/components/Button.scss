@@ -1,0 +1,14 @@
+.btn {
+    padding: 1rem 1.75rem;
+    color: var(--white);
+    background: linear-gradient(90deg, var(--green), var(--cyan));
+    border: none;
+    border-radius: 10rem;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.75;
+    }
+}
