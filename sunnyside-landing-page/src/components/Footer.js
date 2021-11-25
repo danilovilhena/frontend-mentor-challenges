@@ -1,9 +1,4 @@
 import "./Footer.scss"
-import logo from "../images/logo.svg"
-import iconFacebook from "../images/icon-facebook.svg"
-import iconInstagram from "../images/icon-instagram.svg"
-import iconTwitter from "../images/icon-twitter.svg"
-import iconPinterest from "../images/icon-pinterest.svg"
 
 const Footer = () => (
     <footer>

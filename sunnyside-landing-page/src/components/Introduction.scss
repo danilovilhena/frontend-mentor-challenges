@@ -42,6 +42,52 @@
                 background-color: #6DCFFF;
             }
         }
+        
+        .menu-toggler {
+            display: none;
+        }
+    }
+
+    #mobile-menu {
+        opacity: 0;
+        height: 0;
+        overflow: hidden;
+        display: flex;
+        margin-top: 1rem;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        background-color: white;
+        
+        a {
+            text-decoration: none;
+            color: var(--dark-gray-blue);
+            width: 100%;
+            text-align: center;
+            padding: 1rem 0;
+
+            &:first-child {
+                padding-top: 2rem;
+            }
+        }
+
+        button {
+            font-size: .875rem;
+            font-family: var(--serif);
+            text-transform: uppercase;
+            color: #000;
+            background-color: var(--yellow);
+            border: none;
+            padding: .875rem 1.5rem;
+            margin: 1rem 0 2rem 0;
+            border-radius: 4rem;
+            cursor: pointer;
+
+            &:hover {
+                color: var(--white);
+                background-color: #6DCFFF;
+            }
+        }
     }
 
     h1 {
@@ -50,6 +96,7 @@
         font-weight: 900;
         letter-spacing: 5px;
         text-transform: uppercase;
+        text-align: center;
         color: var(--white);
         margin: 4rem 0;
     }
@@ -62,5 +109,33 @@
         width: 100%;
         margin-top: -4rem;
         max-width: 70rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .introduction header {
+        .menu-toggler {
+            display: block;
+            width: 3rem;
+            height: 3rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: transparent;
+            padding: .75rem;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        nav:first-of-type {
+            display: none;
+        }
+    }
+
+    #mobile-menu[aria-expanded="true"] {
+        opacity: 1;
+        height: auto;
     }
 }

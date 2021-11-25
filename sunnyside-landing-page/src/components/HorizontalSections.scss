@@ -15,6 +15,10 @@
         width: 50%;
     }
 
+    > img {
+        object-fit: cover;
+    }
+
     > div {
         padding: 10% 7.5%;
         margin: auto;

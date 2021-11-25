@@ -5,3 +5,71 @@
         width: 25%;
     }
 }
+
+// Responsive adjustments
+@media (max-width: 900px) {
+    .horizontal-section > div{
+        padding: 10% 5% !important;
+    }
+
+    #testimonials {
+        padding: 4rem 0 !important;
+    }
+    
+    #divided section {
+        padding-bottom: 1rem !important;
+    }
+
+    #divided section .text {
+        width: 75% !important;
+    }
+}
+
+@media (max-width: 700px) {
+    .horizontal-section {
+        flex-direction: column-reverse !important;
+
+        > * {
+            width: 100% !important;
+        }
+
+        > div {
+            text-align: center !important;
+        }
+    }
+
+    #divided {
+        flex-direction: column !important;
+
+        > * {
+            width: 100% !important;
+        }
+
+        section {
+            padding-bottom: 2rem !important;
+        }
+    }
+
+    #testimonials {
+        padding: 2rem 0 !important;
+    }
+
+    .grid {
+        grid-template: 1fr / 1fr !important;
+
+        .grid-item {
+            img, .testimonial {
+                margin-bottom: 0 !important;
+            }
+        }
+    }
+
+    #images{
+        flex-wrap: wrap;
+
+        img {
+            width: 50%;
+        }
+    }
+
+}
