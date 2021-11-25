@@ -6,6 +6,7 @@ header {
     max-width: 80rem;
     margin: auto;
     padding: 1rem 0 0 0;
+    margin-bottom: 1rem;
 
     > img {
         width: 8rem;
@@ -13,8 +14,7 @@ header {
 
     a {
         text-decoration: none;
-        color: var(--gray);
-        padding-bottom: 1.5rem;
+        padding-bottom: 1.75rem;
         border-bottom: 4px solid transparent;
 
         &:not(:last-child) {
@@ -22,7 +22,6 @@ header {
         }
 
         &:hover {
-            color: var(--blue);
             border-image-slice: 2;
             border-image-source: linear-gradient(90deg, var(--green), var(--cyan));
         }

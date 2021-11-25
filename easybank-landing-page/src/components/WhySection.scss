@@ -1,0 +1,41 @@
+.why-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--very-light-gray);
+
+    > * {
+        width: 90%;
+        max-width: 80rem;
+        margin: auto;
+    }
+
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    p {
+        line-height: 1.5;
+    }
+
+    > p {
+        margin-bottom: 3.5rem;
+    }
+
+    .grid {
+        display: grid;
+        grid-template: 1fr / repeat(4, 1fr);
+        grid-gap: 4rem;
+    }
+
+    .grid-item {
+        img{
+            margin-bottom: .75rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+        }
+    }
+}
