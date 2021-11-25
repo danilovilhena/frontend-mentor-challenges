@@ -8,8 +8,8 @@ const Introduction = () => {
 
     const clickHandler = () => {
         let previous = document.querySelector('#mobile-menu').ariaExpanded
-        document.querySelector('#mobile-menu').ariaExpanded = (previous == 'false')
-        document.querySelector('#mobile-menu').ariaHidden = (previous == 'true')
+        document.querySelector('#mobile-menu').ariaExpanded = (previous === 'false')
+        document.querySelector('#mobile-menu').ariaHidden = (previous === 'true')
     }
 
     return (
@@ -20,16 +20,16 @@ const Introduction = () => {
                 <img src={hamburger} alt="Toggle menu"></img>
             </button>
             <nav>
-                <a href="#">About</a>
-                <a href="#">Services</a>
-                <a href="#">Projects</a>
+                <a href="/#">About</a>
+                <a href="/#">Services</a>
+                <a href="/#">Projects</a>
                 <button>Contact</button>
             </nav>
         </header>
-        <nav id="mobile-menu" aria-expanded="false" aria-hidden="true">
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Projects</a>
+        <nav id="mobile-menu" aria-hidden="true">
+            <a href="/#">About</a>
+            <a href="/#">Services</a>
+            <a href="/#">Projects</a>
             <button>Contact</button>
         </nav>
         <h1>We are creatives</h1>

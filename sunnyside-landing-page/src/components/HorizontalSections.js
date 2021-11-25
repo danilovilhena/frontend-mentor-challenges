@@ -24,7 +24,7 @@ const HorizontalSections = () => {
         <div>
           <h2>{el.title}</h2>
           <p>{el.description}</p>
-          <a href="#"><span>Learn more</span></a>
+          <a href="/#"><span>Learn more</span></a>
         </div>
         <img src={el.image} alt={el.alt}></img>
       </section>
