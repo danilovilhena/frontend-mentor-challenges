@@ -1,4 +1,4 @@
-.why-section {
+section {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -12,7 +12,7 @@
 
     h2 {
         font-size: 2rem;
-        margin-bottom: 0.5rem;
+        margin-bottom: 1.5rem;
     }
 
     p {
@@ -38,4 +38,8 @@
             font-size: 1.5rem;
         }
     }
+}
+
+.why-section {
+    background-color: var(--light-gray);
 }
