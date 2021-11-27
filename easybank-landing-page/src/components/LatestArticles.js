@@ -42,7 +42,7 @@ const LatestArticles = () => {
                     <img src={el.image} alt={el.title}></img>
                     <div className="grid-content">
                         <p className="author">By {el.author}</p>
-                        <h3><a>{el.title}</a></h3>
+                        <h3><a href="/#">{el.title}</a></h3>
                         <p>{el.description}</p>
                     </div>
                 </div>
