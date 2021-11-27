@@ -1,4 +1,4 @@
-import "./Button.scss"
+import "../styles/Button.scss"
 
 const Button = () => <button className="btn">Request Invite</button>
 

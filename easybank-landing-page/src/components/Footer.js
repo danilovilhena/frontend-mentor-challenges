@@ -1,4 +1,4 @@
-import "./Footer.scss"
+import "../styles/Footer.scss"
 import Button from "./Button"
 import logo from "../assets/white-logo.svg"
 

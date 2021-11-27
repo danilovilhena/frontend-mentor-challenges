@@ -1,4 +1,4 @@
-import "./WhySection.scss"
+import "../styles/WhySection.scss"
 import imageOnline from "../assets/icon-online.svg"
 import imageBudgeting from "../assets/icon-budgeting.svg"
 import imageOnboarding from "../assets/icon-onboarding.svg"

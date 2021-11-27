@@ -1,4 +1,4 @@
-import "./LatestArticles.scss"
+import "../styles/LatestArticles.scss"
 import image1 from '../assets/image-currency.jpg'
 import image2 from '../assets/image-restaurant.jpg'
 import image3 from '../assets/image-plane.jpg'
