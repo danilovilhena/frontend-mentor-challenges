@@ -121,6 +121,15 @@
             margin-top: 1rem;
         }
     }
+    header .btn {
+        display: none;
+    }
+    header {
+        padding: 2rem 0 0 0;
+    }
+    header a {
+        padding-bottom: 0.75rem;
+    }
 }
 
 @media (max-width: 768.98px) {
@@ -140,6 +149,33 @@
     }
     .grid-item {
         text-align: center;
+    }
+    .menu-btn {
+        display: flex !important;
+    }
+    .mobile-retracted {
+        display: none;
+    }
+    header .mobile-expanded {
+        position: absolute;
+        z-index: 1;
+        top: 6rem;
+        right: 5%;
+        display: flex;
+        flex-direction: column; 
+        background-color: var(--white);
+        width: 90%;
+        border-radius: .5rem;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+
+        a {
+            margin-right: 0 !important;
+            color: var(--blue) !important;
+            text-align: center;
+            border-image-slice: inherit !important;
+            border-image-source: none !important;
+            padding: 1rem 0 !important;
+        }
     }
 }
 

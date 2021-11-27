@@ -26,4 +26,25 @@ header {
             border-image-source: linear-gradient(90deg, var(--green), var(--cyan));
         }
     }
+
+    .menu-btn {
+        display: none;
+        height: 2.5rem;
+        width: 2.5rem;
+        background: none;
+        outline: none;
+        border: none;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .backdrop {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: black;
+        opacity: 0.5;
+    }
 }
