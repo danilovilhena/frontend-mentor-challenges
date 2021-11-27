@@ -1,0 +1,113 @@
+@media (max-width: 1500.98px) {
+    .introduction {
+        background-position: right -60% top 70% !important;
+    }
+}
+
+@media (max-width: 1400.98px) {
+    .introduction .cellphones {
+        width: 38rem !important;
+    }
+}
+
+@media (max-width: 1300.98px) {
+    .introduction .container > div {
+        width: 50% !important;
+    }
+    .introduction .cellphones {
+        width: 30rem !important;
+    }
+    .introduction {
+        padding: 4rem 0 !important;
+        background-position: right -80% top 70% !important;
+    }
+}
+
+@media (max-width: 1100.98px) {
+    .introduction .container > div {
+        width: 60% !important;
+    }
+
+    .introduction .cellphones {
+        width: 45% !important;
+    }
+}
+
+@media (max-width: 1000.98px) {
+    .introduction {
+        background-position: right -90% top 70% !important;
+    }
+
+    .introduction .cellphones {
+        width: 50% !important;
+        right: -10% !important;
+    }
+}
+
+@media (max-width: 900.98px) {
+    .introduction .container > div {
+        width: 100% !important;
+        text-align: center;
+    }
+    .introduction .container > div p {
+        width: 100% !important;
+    }
+    .introduction {
+        padding-top: 20rem !important;
+        background-position: center top -8rem !important;
+        overflow: hidden !important;
+    }
+    .introduction .cellphones {
+        right: 25% !important;
+        top: -8rem !important;
+    }
+}
+
+@media (max-width: 768.98px) {
+    .introduction {
+        padding-top: 18rem !important;
+    }
+}
+
+@media (max-width: 700.98px) {
+    .introduction .container > div h1 {
+        font-size: 3rem !important;
+    }
+    .introduction {
+        background-position: center top -5rem !important;
+    }
+    .introduction .cellphones {
+        top: -5rem !important;
+    }
+}
+
+@media (max-width: 600.98px) {
+    .introduction {
+        background-position: center top -2rem !important;
+    }
+    .introduction .cellphones {
+        top: -2rem !important;
+    }
+}
+@media (max-width: 450.98px) {
+    .introduction {
+        background-size: 100% !important;
+        background-position: center -2rem !important;
+    }
+    .introduction .cellphones {
+        top: -2rem !important;
+        width: 75% !important;
+        right: 12.5% !important;
+    }
+    .introduction .container > div h1 {
+        font-size: 2.5rem !important;
+    }
+}
+@media (max-width: 350.98px) {
+    .introduction .container > div h1 {
+        font-size: 2.25rem !important;
+    }
+    .introduction {
+        padding-top: 16rem !important;
+    }
+}
