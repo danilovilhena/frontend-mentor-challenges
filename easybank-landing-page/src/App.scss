@@ -8,6 +8,9 @@
     .introduction .cellphones {
         width: 38rem !important;
     }
+    .latest-section .grid-item .grid-content {
+        padding: 1rem !important;
+    }
 }
 
 @media (max-width: 1300.98px) {
@@ -21,6 +24,9 @@
         padding: 4rem 0 !important;
         background-position: right -80% top 70% !important;
     }
+    .latest-section .grid-item {
+        height: max-content;
+    }
 }
 
 @media (max-width: 1100.98px) {
@@ -30,6 +36,12 @@
 
     .introduction .cellphones {
         width: 45% !important;
+    }
+    .latest-section .grid-item {
+        height: auto;
+    }
+    .latest-section .grid {
+        grid-template: repeat(2, 1fr) / repeat(2, 1fr) !important;
     }
 }
 
@@ -41,6 +53,9 @@
     .introduction .cellphones {
         width: 50% !important;
         right: -10% !important;
+    }
+    section .grid {
+        grid-template: repeat(2, 1fr) / repeat(2, 1fr) !important;
     }
 }
 
@@ -67,6 +82,9 @@
     .introduction {
         padding-top: 18rem !important;
     }
+    section {
+        padding: 3rem 0;
+    }
 }
 
 @media (max-width: 700.98px) {
@@ -78,6 +96,10 @@
     }
     .introduction .cellphones {
         top: -5rem !important;
+    }
+
+    section .grid {
+        grid-template: 1fr / 1fr !important;
     }
 }
 
