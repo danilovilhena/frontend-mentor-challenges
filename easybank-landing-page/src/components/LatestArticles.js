@@ -37,8 +37,8 @@ const LatestArticles = () => {
         <h2>Latest Articles</h2>
 
         <div className="grid">
-            {articles.map(el => (
-                <div className="grid-item">
+            {articles.map((el, idx) => (
+                <div className="grid-item" key={idx}>
                     <img src={el.image} alt={el.title}></img>
                     <div className="grid-content">
                         <p className="author">By {el.author}</p>

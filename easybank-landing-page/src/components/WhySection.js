@@ -34,8 +34,8 @@ const WhySection = () => {
         <p>We leverage Open Banking to turn your bank account into your financial hub.<br/> Control your finances like never before.</p>
 
         <div className="grid">
-            {reasons.map(el => (
-                <div className="grid-item">
+            {reasons.map((el, idx) => (
+                <div className="grid-item" key={idx}>
                     <img src={el.image} alt={el.title}></img>
                     <h3>{el.title}</h3>
                     <p>{el.description}</p>
