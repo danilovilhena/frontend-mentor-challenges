@@ -22,3 +22,8 @@ Below you can find my completed projects:
 **Made with:** React + SASS (Flexbox and Grid layout)    
 
 ![Sunnyside landing page screenshot](https://user-images.githubusercontent.com/54288190/143366725-84f84b97-253f-4521-943a-88fc0da1e456.png)
+
+## [Easybank landing page](https://github.com/danilovilhena/frontend-mentor-challenges/tree/main/easybank-landing-page)
+**Made with:** React + SASS (Flexbox and Grid layout)    
+
+![Easybank landing page screenshot](https://user-images.githubusercontent.com/54288190/143667504-d3c798cc-55b6-4666-911e-e522eb8c9090.png)
