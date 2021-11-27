@@ -12,7 +12,7 @@ Users should be able to:
 
 ### Screenshot
 
-![screenshot]()
+![screenshot](https://user-images.githubusercontent.com/54288190/143667504-d3c798cc-55b6-4666-911e-e522eb8c9090.png)
 
 ### How to run?
   1. Clone or download the project
