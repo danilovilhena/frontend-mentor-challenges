@@ -31,7 +31,7 @@ const WhySection = () => {
     return (
     <section className="why-section">
         <h2>Why choose Easybank?</h2>
-        <p>We leverage Open Banking to turn your bank account into your financial hub.<br/>Control your finances like never before.</p>
+        <p>We leverage Open Banking to turn your bank account into your financial hub.<br/> Control your finances like never before.</p>
 
         <div className="grid">
             {reasons.map(el => (
