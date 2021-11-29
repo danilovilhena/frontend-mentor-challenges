@@ -1,0 +1,20 @@
+:root {
+	--white: hsl(0, 0%, 100%);
+	--light-gray: hsl(0, 0%, 98%);
+	--dark-gray: hsl(0, 0%, 52%);
+	--dark-blue: hsl(200, 15%, 8%);
+	--background-blue: hsl(207, 26%, 17%);
+	--element-blue: hsl(209, 23%, 22%);
+}
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+	box-sizing: border-box;
+	font-family: 'Nunito Sans', sans-serif;
+	font-weight: 300;
+}
