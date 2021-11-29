@@ -17,14 +17,14 @@ Users should be able to:
 ### How to run?
   1. Clone or download the project
   2. Run `npm install`
-  3. Run `npm run dev`
+  3. Run `npm start`
   4. Open http://localhost:3000 in your browser
 
 ### Built with
 
 - Semantic HTML5 markup
 - Flexbox + Grid layout
-- [Nuxt.js](https://nuxtjs.org) - Vue Framework
+- [React](https://reactjs.org/) - JS library
 - [SASS](https://sass-lang.com) - For styles
 
 ### Author
