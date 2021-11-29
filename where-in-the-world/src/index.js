@@ -1,11 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import { Router } from "@reach/router"
+import Home from './pages/Home';
+import Country from './pages/Country';
+import Header from './components/Header';
 import reportWebVitals from './reportWebVitals';
+import './index.css';
 
 ReactDOM.render(
-  <React.StrictMode><App/></React.StrictMode>,
+  <React.StrictMode>
+    <Header />
+    <Router>
+      <Home path="/"/>
+      <Country path="country/:countryName"/>
+    </Router>
+  </React.StrictMode>,
   document.getElementById('root')
 );
 
