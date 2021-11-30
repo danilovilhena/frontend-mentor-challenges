@@ -1,0 +1,62 @@
+header {
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+
+    div {
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.125rem 0;
+
+        h1 {
+            font-size: 1.25rem;
+            transition: none;
+        }
+
+        button {
+            border: none;
+            outline: none;
+            background: none;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            font-family: inherit;
+            font-weight: 600;
+            font-size: 1rem;
+            padding: .5rem;
+
+            svg {
+                width: 1.25rem;
+                height: 1.25rem;
+                margin-right: .5rem;
+            }
+
+            &:hover {
+                svg path {
+                    fill: black;
+                }
+            }
+        }
+    }
+}
+
+.dark-mode header {
+    color: var(--white);
+    background-color: var(--element-blue);
+
+    button {
+        color: var(--white);
+
+        svg path {
+            color: var(--white);
+            fill: var(--white);
+        }
+
+        &:hover {
+            svg path {
+                fill: none;
+            }
+        }
+    }
+}
