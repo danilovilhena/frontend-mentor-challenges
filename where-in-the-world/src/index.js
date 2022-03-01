@@ -6,6 +6,7 @@ import Country from './pages/Country';
 import Header from './components/Header';
 import reportWebVitals from './reportWebVitals';
 import './index.css';
+import './index.responsivity.css';
 
 ReactDOM.render(
   <React.StrictMode>
