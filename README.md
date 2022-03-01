@@ -31,4 +31,4 @@ Below you can find my completed projects:
 ## [Where in the world?](https://github.com/danilovilhena/frontend-mentor-challenges/tree/main/where-in-the-world)
 **Made with:** React + SASS (Flexbox and Grid layout)    
 
-![Where in the world? screenshot](https://res.cloudinary.com/dz209s6jk/image/upload/q_auto,w_900/Challenges/jfrcfmcisi1xiwm4rl1s.jpg)
+![Where in the world? screenshot](https://res.cloudinary.com/dz209s6jk/image/upload/q_auto,w_1080/Challenges/jfrcfmcisi1xiwm4rl1s.jpg)
