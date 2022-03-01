@@ -1,0 +1,32 @@
+main {
+    margin-top: 4rem;
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 4rem 2rem;
+    }
+
+    .grid-item {
+        background-color: var(--white);
+        border-radius: .5rem;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+
+        img{
+            width: 100%;
+            object-fit: cover;
+            height: 50%;
+            border-radius: .5rem .5rem 0 0;
+        }
+
+        .grid-content{
+            display: flex;
+            flex-direction: column;
+            padding: 1rem 2rem 0 2rem;
+
+            p {
+                margin: .25rem 0;
+            }
+        }
+    }
+}
