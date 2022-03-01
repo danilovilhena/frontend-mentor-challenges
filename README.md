@@ -27,3 +27,8 @@ Below you can find my completed projects:
 **Made with:** React + SASS (Flexbox and Grid layout)    
 
 ![Easybank landing page screenshot](https://user-images.githubusercontent.com/54288190/143667504-d3c798cc-55b6-4666-911e-e522eb8c9090.png)
+
+## [Where in the world?](https://github.com/danilovilhena/frontend-mentor-challenges/tree/main/where-in-the-world)
+**Made with:** React + SASS (Flexbox and Grid layout)    
+
+![Where in the world? screenshot](https://res.cloudinary.com/dz209s6jk/image/upload/q_auto,w_900/Challenges/jfrcfmcisi1xiwm4rl1s.jpg)
