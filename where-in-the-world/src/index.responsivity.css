@@ -14,10 +14,22 @@
     main .grid {
         grid-template-columns: repeat(2, 1fr);
     }
+    #country-info {
+        grid-template-columns: 1fr;
+        margin-bottom: 2rem;
+    }
+
+    #country-info img {
+        margin-bottom: 1rem;
+    }
+    
+    #country-info #border {
+        margin-top: -.5rem;
+    }
 }
 
 @media (max-width: 600px) {
-    main .grid {
+    main .grid, #country-info .grid {
         grid-template-columns: 1fr;
     }
 

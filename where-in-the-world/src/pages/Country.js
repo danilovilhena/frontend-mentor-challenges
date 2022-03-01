@@ -7,7 +7,6 @@ const Country = (props) => {
   const slugify = (str) => str.trim().toLowerCase().replace(/[\[\]?.,\/#!$%\^&\*;:{}=\"\-_~()…–—·'’\s]/g, "-").replace(/[\-]{2,}/g, "-").replace(/^[\-]/g, "").replace(/[\-]$/g, "");
 
   const returnHome = () => { navigate('/') }
-  const navigateTo = (name) => { navigate(`/country/${name}`) }
 
   useEffect(() => {
     if(props.countryName.length === 3) {
@@ -54,7 +53,7 @@ const Country = (props) => {
           </div>
           <div id="border">
             <b>Border countries: </b>
-            {country.borders.map(border => <a className="badge" onClick={() => {navigateTo(border)}}>{border}</a>)}
+            {country.borders.map(border => <a className="badge" href={`/country/${border}`} key={border}>{border}</a>)}
           </div>
         </div>
       </div>
