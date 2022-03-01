@@ -1,16 +1,37 @@
 main {
-    margin-top: 4rem;
+    margin-top: 2rem;
+
+    .inputs {
+        display: flex;
+        justify-content: space-between;
+
+        input {
+            border-radius: .25rem;
+            padding: 1rem 1rem;
+            width: 40%;
+            border: none;
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 2px;
+        }
+
+        select {
+            border-radius: .25rem;
+            padding: 1rem 1rem;
+            border: none;
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 2px;
+        }
+    }
 
     .grid {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 4rem 2rem;
+        margin-top: 2rem;
     }
 
     .grid-item {
         background-color: var(--white);
         border-radius: .5rem;
-        box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 2px;
 
         img{
             width: 100%;
@@ -23,6 +44,10 @@ main {
             display: flex;
             flex-direction: column;
             padding: 1rem 2rem 0 2rem;
+
+            h2 {
+                margin-bottom: .5rem;
+            }
 
             p {
                 margin: .25rem 0;
