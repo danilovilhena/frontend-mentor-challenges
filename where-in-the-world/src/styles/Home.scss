@@ -56,3 +56,14 @@ main {
         }
     }
 }
+
+.dark-mode {
+    .grid-item, input, select, option {
+        background-color: var(--element-blue);
+        color: var(--white);
+    }   
+
+    ::placeholder, :-ms-input-placeholder, ::-ms-input-placeholder {
+        color: var(--white);
+    }
+}

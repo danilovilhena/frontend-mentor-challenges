@@ -64,3 +64,28 @@
         }
     }
 }
+
+.dark-mode {
+    .back-button {
+        background-color: var(--element-blue);
+        color: var(--white);
+
+        svg {
+            fill: white;
+        }
+
+        &:hover, &:active, &:focus {
+            background-color: var(--background-blue);
+        }
+    }
+
+
+    #country-info .badge {
+        color: var(--white);
+        background-color: var(--element-blue);
+
+        &:hover, &:active, &:focus {
+            background-color: var(--background-blue);
+        }
+    }
+}

@@ -50,6 +50,10 @@ header {
     color: var(--white);
     background-color: var(--element-blue);
 
+    h1 a {
+        color: var(--white);
+    }
+
     button {
         color: var(--white);
 
