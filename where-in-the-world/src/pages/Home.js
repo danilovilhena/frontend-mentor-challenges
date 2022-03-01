@@ -1,4 +1,5 @@
-import {useEffect, useState} from 'react'
+import { useEffect, useState } from 'react'
+import { navigate } from '@reach/router'
 
 import '../styles/Home.scss';
 
@@ -6,6 +7,7 @@ const Home = () => {
   const [original, setOriginal] = useState([])
   const [countries, setCountries] = useState([])
   const pick = (obj, ...keys) => Object.fromEntries(keys.filter(key => key in obj).map(key => [key, obj[key]]));
+  const slugify = (str) => str.trim().toLowerCase().replace(/[\[\]?.,\/#!$%\^&\*;:{}=\"\-_~()…–—·'’\s]/g, "-").replace(/[\-]{2,}/g, "-").replace(/^[\-]/g, "").replace(/[\-]$/g, "");
 
   const onSearchChange = (event) => {
     setCountries(original.filter(el => el.name.toLowerCase().includes(event.target.value.toLowerCase())))
@@ -16,6 +18,10 @@ const Home = () => {
       setCountries(original)
     else
       setCountries(original.filter(el => el.region.toLowerCase() === event.target.value))
+  }
+
+  const navigateTo = (name) => {
+    navigate(`/country/${slugify(name)}`)
   }
 
   useEffect(() => {
@@ -44,7 +50,7 @@ const Home = () => {
       </div>
       <div className="grid">
         {countries.map(el => 
-          <div className="grid-item" key={el.name}>
+          <div className="grid-item" key={el.name} role="button" onClick={() => {navigateTo(el.name)}}>
             <img src={el.flag} alt={el.name + " flag"} />
             <div className="grid-content">
               <h2>{el.name}</h2>
